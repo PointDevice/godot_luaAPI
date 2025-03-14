@@ -11,7 +11,7 @@
 using namespace godot;
 #endif
 
-void initialize_luaAPI_module(ModuleInitializationLevel p_level) {
+void initialize_godot_luaAPI_module(ModuleInitializationLevel p_level) {
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}
@@ -26,7 +26,7 @@ void initialize_luaAPI_module(ModuleInitializationLevel p_level) {
 	ClassDB::register_class<LuaTuple>();
 }
 
-void uninitialize_luaAPI_module(ModuleInitializationLevel p_level) {
+void uninitialize_godot_luaAPI_module(ModuleInitializationLevel p_level) {
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}

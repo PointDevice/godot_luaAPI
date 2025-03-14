@@ -4,7 +4,7 @@
 #include "luaObjectMetatable.h"
 
 #include <luaState.h>
-
+#include "core/object/object.h"
 #ifdef LAPI_GDEXTENSION
 #include <godot_cpp/classes/file_access.hpp>
 #endif
@@ -71,7 +71,7 @@ void LuaAPI::_bind_methods() {
 }
 
 // Calls LuaState::bindLibs()
-Ref<LuaError> LuaAPI::bindLibraries(TypedArray<String> libs) {
+Ref<LuaError> LuaAPI::bindLibraries(Array libs) {
 	return state.bindLibraries(libs);
 }
 

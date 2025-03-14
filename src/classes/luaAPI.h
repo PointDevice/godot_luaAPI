@@ -53,7 +53,7 @@ public:
 	Variant getRegistryValue(String name);
 
 	Ref<LuaError> setRegistryValue(String name, Variant var);
-	Ref<LuaError> bindLibraries(TypedArray<String> libs);
+	Ref<LuaError> bindLibraries(Array libs);
 	Ref<LuaError> pushGlobalVariant(String name, Variant var);
 
 	Ref<LuaCoroutine> newCoroutine();

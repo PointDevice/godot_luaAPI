@@ -41,7 +41,7 @@ else:
         env_lua.Append(CPPDEFINES=['LUA_USE_IOS'])
 
     if not env_lua.msvc:
-        env_lua['CFLAGS'].remove('-std=gnu11')
+        #env_lua['CFLAGS'].remove('-std=gnu11')
         env_lua.Append(CFLAGS=['-std=c99'])
 
     env_lua.Append(CPPPATH=[Dir('lua').abspath])

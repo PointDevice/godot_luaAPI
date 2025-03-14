@@ -7,6 +7,6 @@
 #include <godot_cpp/core/class_db.hpp>
 using namespace godot;
 #endif
-void initialize_luaAPI_module(ModuleInitializationLevel p_level);
-void uninitialize_luaAPI_module(ModuleInitializationLevel p_level);
+void initialize_godot_luaAPI_module(ModuleInitializationLevel p_level);
+void uninitialize_godot_luaAPI_module(ModuleInitializationLevel p_level);
 #endif
